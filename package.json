@@ -1,10 +1,12 @@
 {
   "name": "webpack-typescript-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple webpack typescript example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "node dist/bundle.js",
+    "dev": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/raulanatol/webpack-typescript-example/issues"
   },
-  "homepage": "https://github.com/raulanatol/webpack-typescript-example#readme"
+  "homepage": "https://github.com/raulanatol/webpack-typescript-example#readme",
+  "devDependencies": {
+    "@types/node": "^8.10.11",
+    "@types/webpack": "^4.1.4",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.3"
+  }
 }
