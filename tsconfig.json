@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "lib": [
+      "dom"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ]
